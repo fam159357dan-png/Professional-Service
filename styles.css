@@ -56,15 +56,11 @@ h1,h2,h3{font-family:'Rubik','Golos Text',sans-serif;line-height:1.15;font-weigh
 .section-head h2,.contacts h2{font-size:clamp(1.65rem,3.6vw,2.5rem);margin-bottom:10px;color:var(--navy)}
 .section-head p{color:var(--mute)}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.tile{background:var(--bg);border:2px solid var(--line);border-radius:var(--r);padding:26px}
-.tile .ic{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--blue);color:#fff;margin-bottom:14px}
-.tile .ic .i{width:26px;height:26px}
+.tile{background:var(--bg);border:2px solid var(--line);border-radius:var(--r);overflow:hidden}
+.tile img{width:100%;aspect-ratio:5/3;object-fit:cover}
+.tile div{padding:22px 26px 26px}
 .tile h3{font-size:1.15rem;margin-bottom:6px}
 .tile p{color:var(--mute);font-size:.96rem}
-.tile-photo{grid-row:span 2;padding:0;overflow:hidden;display:flex;flex-direction:column}
-.tile-photo img{width:100%;flex:1;min-height:200px;object-fit:cover}
-.tile-photo div{padding:22px 26px 26px}
-.tile-wide{grid-column:1/-1}
 .how{background:var(--navy);color:#fff;border-radius:40px;margin-inline:12px;padding:70px 0}
 .how-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
 .how .section-head h2{color:#fff}
@@ -115,7 +111,6 @@ h1,h2,h3{font-family:'Rubik','Golos Text',sans-serif;line-height:1.15;font-weigh
  .hero-grid{grid-template-columns:1fr}
  .hero-visual{width:min(100%,300px)}
  .tiles{grid-template-columns:1fr 1fr}
- .tile-photo{grid-row:auto;grid-column:span 2}
  .how-grid{grid-template-columns:1fr}
  .rev-grid{columns:2}
  .contacts-grid{grid-template-columns:1fr}
@@ -125,7 +120,6 @@ h1,h2,h3{font-family:'Rubik','Golos Text',sans-serif;line-height:1.15;font-weigh
  .section{padding:60px 0}
  .hero{padding:28px 0 64px}
  .tiles{grid-template-columns:1fr}
- .tile-photo{grid-column:auto}
  .rev-grid{columns:1}
  .numbers-grid{grid-template-columns:1fr;gap:12px}
  .hero-buttons .btn{width:100%}
